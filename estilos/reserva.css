@@ -1,0 +1,149 @@
+/* inicio del seteo  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+/*fin del seteo  */
+
+body{
+    background-image: url('../imagenes/fondoReserva.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+/* Inicio de la barra de navegacion */
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+.header a{
+    color: #fff;
+}
+
+.links{
+    display: flex;
+    
+}
+
+.links a{
+    color: #fff;
+    margin-left: 20px;
+}
+
+.links a:hover{
+    border-bottom: 1px solid #000;
+    color: rgb(0,255,255);
+    transition: .1s;
+}
+/* Fin de la barra de navegacion */
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor-header{
+    margin: 1em;
+}
+
+.contenedor-carrusel{
+    width: 80%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.contenedor-carrusel i{
+    font-size: 2em;
+}
+
+.contenedor-carrusel button{
+    padding: 6px;
+    background-color: none;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 30%;
+}
+
+#contenedor-carrusel{
+    height: 400px;
+    overflow: hidden;
+    color: #000;
+    font-size: 1.5em;
+}
+
+.itemCarrusel{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.flechacarrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.tarjetacarrusel{
+    background-image: url('../imagenes/1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetacarruse2{
+    background-image: url('../imagenes/2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetacarruse3{
+    background-image: url('../imagenes/3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetacarrusel img{
+    width: 100%;
+    background-size: cover;
+}
+
+/* fin contenido */

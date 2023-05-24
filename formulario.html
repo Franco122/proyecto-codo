@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link JavaScript -->
+    <script defer src = "javascript/form.js"></script>
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+    <title>Paginas de Viajes</title>
+</head>
+<body>
+     <!-- Inicio del header -->
+     <header class = "header">
+        <a href="#"><h2>Logo</h2></a>
+       
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" id = "menu">
+            <span id = "menu-abrir">&#9776;</span>
+        </label>
+
+        <nav class = "navbar">
+            <ul class = "links menu-visible">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="formulario.html">Contactanos</a></li>
+                <li><a href="reserva.html">Explora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin del header -->
+    <!-- Inicio del formulario -->
+    <div class="contenedor">
+        <div class="izquierda">
+            <h1 class = "izquierda__titulo">Encuentra el mejor lugar<br>
+                para quedarte
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+        </div>
+        <div class="derecha">
+            <h2 class = "derecha__titulo">Crea una cuenta gratis</h2>
+            <br>
+            <form action="" class = "derecha-form">
+                <div class="form-item">
+                    <input type="text" placeholder="Nombre" name = "nombre" id = "nombre">
+
+                </div>
+                <div class="form-item">
+                    <input type="text" placeholder="Apellido" id = "apellido">
+                </div>
+                <div class="form-item">
+                    <input type="password" placeholder="Contraseña" id = "contrasenia">
+                </div>
+                <div class="form-item">
+                    <input type="email" placeholder="Email" id = "email" required>
+                </div>
+                <br>
+                <a href="#">¿Ya tienes una cuenta? Ingresa</a>
+                <div class="derecha-boton">
+                    <button type="submit" onclick = 'return enviarError();'>Registrate</button>
+                </div>
+            </form>
+            <div id = "error"></div>
+        </div>
+    </div>
+    <!-- Fin del formulario -->
+</body>
+</html>

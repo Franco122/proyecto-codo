@@ -1,0 +1,215 @@
+/* Seteo */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Inicio de la barra de navegacion */
+
+#menu, #menu-check{
+    display: none;
+}
+
+
+.header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.header a{
+    color: #fff;
+}
+
+.links{
+    display: flex;
+    
+}
+
+.links a{
+    color: #fff;
+    margin-left: 20px;
+}
+
+.links a:hover{
+    border-bottom: 1px solid #000;
+    color: rgb(0,255,255);
+    transition: .1s;
+}
+
+.toggle{
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display:none;
+}
+
+/* Fin de la barra de navegacion */
+
+body{
+    background-image: url('../imagenes/fondoContactanos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+}
+
+/* Inicio del contenedor  */
+.contenedor{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.derecha,
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.izquierda{
+    background-image: url('../imagenes/fondoContactanos.jpg');
+    background-size: cover;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.izquierda__titulo{
+    margin-bottom: 30px;
+}
+
+.derecha{
+    background-color: #fff;;
+    justify-content: center;
+}
+/* Fin del contenedor  */
+
+/* inicio del formulario  */
+
+.derecha__titulo{
+    font-size: 2em;
+}
+
+.derecha-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-item{
+    width: 100%;
+}
+
+.form-item input{
+    padding: 7px;
+    width: 90%;
+    margin: 10px;
+    border:none;
+    background:none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.derecha-boton{
+    margin-top: 15px;
+    width: 90%;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.derecha-boton button{
+    width: 100%;
+    padding: 7px;
+    background: #3C37FF;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#error{
+    color: red;
+}
+
+/* fin del formulario  */
+
+/* inicio de la configuracion responsiva */
+@media (max-width: 676px){
+    
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        position: absolute;
+        top: 0.4 rem;
+        right: 0.4rem; 
+        z-index: 999;
+        color: #fff;
+    }
+    
+    .izquierda{
+        display: none;
+    }
+
+    .derecha{
+        flex-basis: 100%
+    }
+
+    .header{
+        justify-content: space-between;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 65px 0;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .links li{
+        margin-top: 1.5em;
+        padding: 15px;
+    }
+
+    .links a:hover{
+       color: rgb(0,255,255);
+    }
+
+}
+/* fin de la configuracion responsiva */
