@@ -160,7 +160,7 @@ body{
 /* fin del formulario  */
 
 /* inicio de la configuracion responsiva */
-@media (max-width: 676px){
+@media (max-width: 1024px){
     
     #menu-check:not(:checked) ~ nav{
         display: none;
@@ -217,7 +217,7 @@ body{
     }
 
 }
-@media (max-width: 375px){
+@media (max-width: 720px){
     .contenedor{
         width: 100%;
     }
