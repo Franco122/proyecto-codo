@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.header img{
+    border-radius: 50%;
+}
+
 /* Inicio de la barra de navegacion */
 
 
