@@ -54,7 +54,6 @@ body{
 }
 /* Fin de la barra de navegacion */
 
-
 .contenedor{
     display: flex;
     flex-direction: column;
@@ -63,10 +62,19 @@ body{
     min-height: 100vh;
     width: 100%;
     text-align: center;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .contenedor-header{
     margin: 1em;
+}
+
+.contenedor-header h1 {
+    margin-bottom: 10px;
 }
 
 .contenedor-carrusel{
@@ -121,6 +129,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(255,255,255);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .tarjetacarruse2{
@@ -132,6 +146,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(255,255,255);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .tarjetacarruse3{
@@ -143,6 +163,63 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(255,255,255);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.tarjetacarruse4{
+    background-image: url('../imagenes/4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255,255,255);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.tarjetacarruse5{
+    background-image: url('../imagenes/5.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255,255,255);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.tarjetacarruse6{
+    background-image: url('../imagenes/6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255,255,255);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .tarjetacarrusel img{
