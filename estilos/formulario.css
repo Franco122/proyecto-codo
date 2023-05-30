@@ -54,6 +54,10 @@
     display:none;
 }
 
+.header img{
+    border-radius: 50%;
+}
+
 /* Fin de la barra de navegacion */
 
 body{
