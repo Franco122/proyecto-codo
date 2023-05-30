@@ -60,6 +60,30 @@ body{
     color: rgb(0,255,255);
     transition: .1s;
 }
+
+.header img{
+    border-radius: 50%;
+}
+
+.inicio-contenido__titulo {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    animation: animarTitulo 2s 2 alternate;
+  }
+  
+  @keyframes animarTitulo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
 /* Fin de la barra de navegacion */
 
 /* Inicio de la seccion principal */
@@ -87,9 +111,7 @@ body{
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 2px;
-    animation: backInUp; 
-    animation-duration: 2s; 
+    letter-spacing: 1px;
 }
 
 
