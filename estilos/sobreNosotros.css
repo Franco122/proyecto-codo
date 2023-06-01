@@ -153,6 +153,7 @@ p{
     .cuarto{
         grid-column: 7/12;
     }
+
 }
 
 @media(max-width: 570px){
@@ -198,15 +199,20 @@ p{
         position: absolute;
         right: 0;
         top: 0;
-        margin: 65px 0;
+        margin-top: 80px;
         z-index: 1;
         text-align: center;
+        padding: 26px;
+    }
+
+    .links li{
+        margin-bottom: 2em;
     }
 
     .links a{
         color: #fff;
         margin-left: 8px;
-        font-size: 1.5em
+        font-size: 1em;
     }
     .textos{
         grid-template-rows: 4;
