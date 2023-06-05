@@ -67,15 +67,13 @@ body{
     background-position: center;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0,0,0,.5);
-    overflow: auto;
 }
 
 /* Inicio del contenedor  */
 .contenedor{
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     width: 80%;
     margin: 10px auto;
     border: 1px solid #fff;
@@ -114,6 +112,7 @@ body{
 
 .derecha__titulo{
     font-size: 2em;
+    background-color : #fff;
 }
 
 .derecha-form{
