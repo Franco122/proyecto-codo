@@ -65,7 +65,7 @@ body{
     position: relative;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr;
     width: 100%;
     min-height: 100vh;
     padding-left: 5%;
@@ -74,7 +74,7 @@ body{
 }
 
 .primero{
-    grid-column: 1/3;
+    grid-column: 1/6;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -83,7 +83,7 @@ body{
 }
 
 .segundo{
-    grid-column: 4/6;
+    grid-column: 7/12;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -92,7 +92,7 @@ body{
 }
 
 .tercero{
-    grid-column: 7/9;
+    grid-column: 1/6;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -101,7 +101,7 @@ body{
 }
 
 .cuarto{
-    grid-column: 10/12;
+    grid-column: 7/12;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -137,24 +137,6 @@ p{
 /* Fin de los textos */
 
 /* Inicio de la configuración responsiva */
-@media(max-width: 965px){
-    .textos{
-        grid-template-rows: 2;
-    }
-    .primero{
-        grid-column: 1/6;
-    }
-    .segundo{
-        grid-column: 7/12;
-    }
-    .tercero{
-        grid-column: 1/6;
-    }
-    .cuarto{
-        grid-column: 7/12;
-    }
-
-}
 
 @media(max-width: 570px){
 
